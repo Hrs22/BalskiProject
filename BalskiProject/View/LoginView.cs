@@ -33,8 +33,8 @@ namespace ChristmasProgram.View
             else if (message != null)
             {
                 this.Visible = false;
-
             }
+            else
             {
                 MessageBox.Show("Something went wrong!");
             }

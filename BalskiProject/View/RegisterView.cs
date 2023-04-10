@@ -1,7 +1,6 @@
 ﻿using BalskiProject.Utilities;
 using ChristmasProgram.Controller;
 using System;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -29,13 +28,23 @@ namespace ChristmasProgram.View
         }
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            if (!Validator.EmptyString(txtBoxEnterEmail.Text) || !Validator.EmptyString(txtBoxEnterPassword.Text))
+            if (Validator.EmptyString(txtBoxEnterEmail.Text) || Validator.EmptyString(txtBoxEnterPassword.Text))
             {
                 MessageBox.Show("Please dont leave the text boxes empty!", "EMPTY BOX DETECTED",
                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
+                if (Validator.EmailLenght(txtBoxEnterEmail.Text))
+                {
+                    MessageBox.Show("The lenght of the Email should be between 8 and 18", "INVALID EMAIL",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (Validator.PassowordLength(txtBoxEnterPassword.Text))
+                {
+                    MessageBox.Show("The lenght of the Password should be between 4 and 12", "INVALID PASSWORD",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 CrudController.Register(txtBoxEnterEmail.Text, txtBoxEnterPassword.Text);
                 Clear();
 

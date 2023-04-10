@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace ChristmasProgram.View
@@ -88,7 +89,7 @@ namespace ChristmasProgram.View
 
         private void btnBuyLoL_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Succsessfully bought!");
+            Process.Start("https://signup.leagueoflegends.com/en-us/signup/redownload");
         }
 
         private void btnBuyTerraria_Click(object sender, EventArgs e)

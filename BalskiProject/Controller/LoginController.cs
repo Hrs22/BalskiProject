@@ -1,6 +1,6 @@
-﻿using System.Data;
-using System.Data.SqlClient;
-using System.Windows.Forms;
+﻿using BalskiProject.Data.Model;
+using BalskiProject.Utilities;
+using System.Linq;
 
 namespace ChristmasProgram.Controller
 {
@@ -16,27 +16,18 @@ namespace ChristmasProgram.Controller
             return isLoggedAsAdmin;
         }
 
-        public string IsUserLogged(string txtBoxEmail, string txtBoxPassword)
+        public string IsUserLogged(string Email, string Password)
         {
-            using (SqlConnection con = new SqlConnection("Data Source=HRUSTIAN;Initial Catalog=BalskiDB;Integrated Security=True;Pooling=False"))
+            using (BalskiDbContexEntities BalskiContext = new BalskiDbContexEntities())
             {
-                string message = null;
-                con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT * FROM AccTable WHERE Email = @Email AND Password = @Password", con);
-                cmd.Parameters.AddWithValue("Email", txtBoxEmail);
-                cmd.Parameters.AddWithValue("Password", txtBoxPassword);
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
-                if (dt.Rows.Count > 0)
+                var foundUser = BalskiContext.AccTables.FirstOrDefault(u => u.Email == Email && u.Password == Password);
+                if (foundUser == null)
                 {
-
-                    MessageBox.Show("Succsesfully logged!");
-                    MainView mv = new MainView();
-                    mv.ShowDialog();
-                    Application.Exit();
+                    return "User not found!";
                 }
-                return message;
+                LoggedUserData.Email = foundUser.Email;
+                LoggedUserData.Password = foundUser.Password;
+                return "Successfuly logged!";
             }
         }
     }

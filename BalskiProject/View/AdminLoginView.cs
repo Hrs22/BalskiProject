@@ -1,7 +1,6 @@
 ﻿using BalskiProject.Utilities;
 using ChristmasProgram.Controller;
 using System;
-using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace ChristmasProgram.View
@@ -89,8 +88,8 @@ namespace ChristmasProgram.View
         }
         private void btnRemoveUser_Click(object sender, EventArgs e)
         {
-             CrudController.DeleteUser(txtBoxEmail.Text, txtBoxPassword.Text);
-             Loadaccount();
+            CrudController.DeleteUser(txtBoxEmail.Text, txtBoxPassword.Text);
+            Loadaccount();
         }
     }
 }

@@ -1,10 +1,7 @@
 ﻿using BalskiProject.Data.Model;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace ChristmasProgram.Controller
 {

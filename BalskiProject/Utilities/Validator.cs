@@ -9,12 +9,12 @@
 
         public static bool EmailLenght(string value)
         {
-            return value.Length >= 3 && value.Length <= 12;
+            return value.Length >= 8 && value.Length <= 18;
         }
 
         public static bool PassowordLength(string value)
         {
-            return value.Length >= 6 && value.Length <= 15;
+            return value.Length >= 4 && value.Length <= 12;
         }
     }
 }
