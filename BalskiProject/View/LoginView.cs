@@ -1,4 +1,6 @@
-﻿using ChristmasProgram.Controller;
+﻿using BalskiProject.Utilities;
+using BalskiProject.View;
+using ChristmasProgram.Controller;
 using System;
 using System.Windows.Forms;
 
@@ -19,22 +21,28 @@ namespace ChristmasProgram.View
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
+            if (Validator.EmptyString(txtBoxEmail.Text) || Validator.EmptyString(txtBoxPassword.Text))
+            {
+                MessageBox.Show("Please dont leave the text boxes empty!", "EMPTY BOX DETECTED",
+                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             var adminPassword = LoginController.IsUserAdmin(txtBoxEmail.Text, txtBoxPassword.Text);
             var message = LoginController.IsUserLogged(txtBoxEmail.Text, txtBoxPassword.Text);
-
             if (adminPassword)
             {
                 MessageBox.Show("Succsesfully logged into Admin!");
-                AdminLoginView adminLoginView = new AdminLoginView();
+                AdminMainView adminMainView = new AdminMainView();
+                adminMainView.Show();
                 this.Hide();
-                adminLoginView.ShowDialog();
-                this.Close();
             }
-            else if (message != null)
+            else if (message == "Successfuly logged!")
             {
-                this.Visible = false;
-
+                MainView mv = new MainView();
+                mv.Show();
+                this.Hide();
             }
+            else
             {
                 MessageBox.Show("Something went wrong!");
             }
@@ -43,8 +51,7 @@ namespace ChristmasProgram.View
         {
             RegisterView rv = new RegisterView();
             this.Hide();
-            rv.ShowDialog();
-            this.Close();
+            rv.Show();
         }
         private void btnCantLog_Click(object sender, EventArgs e)
         {

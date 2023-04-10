@@ -1,10 +1,7 @@
 ﻿using BalskiProject.Data.Model;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace ChristmasProgram.Controller
 {
@@ -14,15 +11,19 @@ namespace ChristmasProgram.Controller
         {
             using (BalskiDbContexEntities BalskiContext = new BalskiDbContexEntities())
             {
-                int? lastId = BalskiContext.AccTables.ToList().LastOrDefault().Id;
-
-                if (lastId is null)
+                var lastUser = BalskiContext.AccTables.ToList().LastOrDefault();
+                int lastId;
+                if (lastUser is null)
                 {
                     lastId = 1;
                 }
+                else
+                {
+                    lastId = lastUser.Id + 1;
+                }
                 BalskiContext.AccTables.Add(new AccTable
                 {
-                    Id = (int)(++lastId),
+                    Id = lastId,
                     Email = txtBoxEnterEmail,
                     Password = txtBoxEnterPassword
                 });

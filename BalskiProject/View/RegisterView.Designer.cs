@@ -89,7 +89,7 @@
             this.txtBoxEnterEmail.Name = "txtBoxEnterEmail";
             this.txtBoxEnterEmail.Size = new System.Drawing.Size(221, 30);
             this.txtBoxEnterEmail.TabIndex = 3;
-            this.txtBoxEnterEmail.Text = "      Enter email ";
+            this.txtBoxEnterEmail.Text = "      Enter Email ";
             this.txtBoxEnterEmail.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtBoxEnterEmail_MouseClick);
             this.txtBoxEnterEmail.MouseHover += new System.EventHandler(this.txtBoxEnterEmail_MouseHover);
             // 
