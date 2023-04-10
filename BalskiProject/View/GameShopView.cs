@@ -81,7 +81,7 @@ namespace ChristmasProgram.View
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            MainView mv = new MainView();
+            ChristmasProgram.MainView mv = new ChristmasProgram.MainView();
             this.Hide();
             mv.ShowDialog();
             this.Close();

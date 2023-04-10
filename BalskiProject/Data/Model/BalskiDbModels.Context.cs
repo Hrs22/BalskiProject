@@ -19,6 +19,12 @@ namespace BalskiProject.Data.Model
             : base("name=BalskiDbContexEntities")
         {
         }
+    
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            throw new UnintentionalCodeFirstException();
+        }
+    
         public virtual DbSet<AccTable> AccTables { get; set; }
     }
 }

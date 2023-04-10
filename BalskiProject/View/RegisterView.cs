@@ -32,18 +32,27 @@ namespace ChristmasProgram.View
             {
                 MessageBox.Show("Please dont leave the text boxes empty!", "EMPTY BOX DETECTED",
                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
             else
             {
-                if (Validator.EmailLenght(txtBoxEnterEmail.Text))
+                if (!Validator.EmailLenght(txtBoxEnterEmail.Text))
                 {
                     MessageBox.Show("The lenght of the Email should be between 8 and 18", "INVALID EMAIL",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
-                else if (Validator.PassowordLength(txtBoxEnterPassword.Text))
+                else if (!Validator.IsValidEmail(txtBoxEnterEmail.Text))
+                {
+                    MessageBox.Show("Your email is missing something!", "INVALID EMAIL",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else if (!Validator.PasswordLength(txtBoxEnterPassword.Text))
                 {
                     MessageBox.Show("The lenght of the Password should be between 4 and 12", "INVALID PASSWORD",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
                 CrudController.Register(txtBoxEnterEmail.Text, txtBoxEnterPassword.Text);
                 Clear();
@@ -55,7 +64,7 @@ namespace ChristmasProgram.View
                 }
                 MessageBox.Show("Succsesfully registered!", "Welcome",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
-                MainView mv = new MainView();
+                ChristmasProgram.MainView mv = new ChristmasProgram.MainView();
                 this.Hide();
                 mv.ShowDialog();
                 this.Close();
