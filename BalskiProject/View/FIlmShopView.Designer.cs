@@ -28,35 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FIlmShopView));
             this.txtBoxWelcome = new System.Windows.Forms.RichTextBox();
             this.btnNextPage = new System.Windows.Forms.Button();
-            this.picBoxStarWars = new System.Windows.Forms.PictureBox();
-            this.picBoxXMEN = new System.Windows.Forms.PictureBox();
-            this.picBoxMenInBlack = new System.Windows.Forms.PictureBox();
-            this.picBoxHarryPotter = new System.Windows.Forms.PictureBox();
-            this.picBoxAvatar = new System.Windows.Forms.PictureBox();
-            this.picBoxAvengers = new System.Windows.Forms.PictureBox();
+            this.picBoxMovie1 = new System.Windows.Forms.PictureBox();
+            this.picBoxMovie2 = new System.Windows.Forms.PictureBox();
+            this.picBoxMovie3 = new System.Windows.Forms.PictureBox();
+            this.picBoxMovie4 = new System.Windows.Forms.PictureBox();
+            this.picBoxMovie5 = new System.Windows.Forms.PictureBox();
+            this.picBoxMovie6 = new System.Windows.Forms.PictureBox();
             this.btnBuyMc = new System.Windows.Forms.Button();
             this.btnBuyTerraria = new System.Windows.Forms.Button();
             this.btnBuyLoL = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
-            this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
-            this.toolTip4 = new System.Windows.Forms.ToolTip(this.components);
-            this.toolTip5 = new System.Windows.Forms.ToolTip(this.components);
-            this.toolTip6 = new System.Windows.Forms.ToolTip(this.components);
             this.btnBack = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxStarWars)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxXMEN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxMenInBlack)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxHarryPotter)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxAvatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxAvengers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie6)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBoxWelcome
@@ -82,65 +75,65 @@
             this.btnNextPage.Text = "Next Page";
             this.btnNextPage.UseVisualStyleBackColor = false;
             // 
-            // picBoxStarWars
+            // picBoxMovie1
             // 
-            this.picBoxStarWars.Location = new System.Drawing.Point(47, 102);
-            this.picBoxStarWars.Name = "picBoxStarWars";
-            this.picBoxStarWars.Size = new System.Drawing.Size(210, 131);
-            this.picBoxStarWars.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBoxStarWars.TabIndex = 19;
-            this.picBoxStarWars.TabStop = false;
-            this.picBoxStarWars.MouseHover += new System.EventHandler(this.picBoxStarWars_MouseHover);
+            this.picBoxMovie1.Location = new System.Drawing.Point(47, 102);
+            this.picBoxMovie1.Name = "picBoxMovie1";
+            this.picBoxMovie1.Size = new System.Drawing.Size(210, 131);
+            this.picBoxMovie1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxMovie1.TabIndex = 19;
+            this.picBoxMovie1.TabStop = false;
+            this.picBoxMovie1.MouseHover += new System.EventHandler(this.picBoxStarWars_MouseHover);
             // 
-            // picBoxXMEN
+            // picBoxMovie2
             // 
-            this.picBoxXMEN.Location = new System.Drawing.Point(324, 102);
-            this.picBoxXMEN.Name = "picBoxXMEN";
-            this.picBoxXMEN.Size = new System.Drawing.Size(210, 131);
-            this.picBoxXMEN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBoxXMEN.TabIndex = 20;
-            this.picBoxXMEN.TabStop = false;
-            this.picBoxXMEN.MouseHover += new System.EventHandler(this.picBoxXMEN_MouseHover);
+            this.picBoxMovie2.Location = new System.Drawing.Point(324, 102);
+            this.picBoxMovie2.Name = "picBoxMovie2";
+            this.picBoxMovie2.Size = new System.Drawing.Size(210, 131);
+            this.picBoxMovie2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxMovie2.TabIndex = 20;
+            this.picBoxMovie2.TabStop = false;
+            this.picBoxMovie2.MouseHover += new System.EventHandler(this.picBoxXMEN_MouseHover);
             // 
-            // picBoxMenInBlack
+            // picBoxMovie3
             // 
-            this.picBoxMenInBlack.Location = new System.Drawing.Point(598, 102);
-            this.picBoxMenInBlack.Name = "picBoxMenInBlack";
-            this.picBoxMenInBlack.Size = new System.Drawing.Size(210, 131);
-            this.picBoxMenInBlack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBoxMenInBlack.TabIndex = 21;
-            this.picBoxMenInBlack.TabStop = false;
-            this.picBoxMenInBlack.MouseHover += new System.EventHandler(this.picBoxMenInBlack_MouseHover);
+            this.picBoxMovie3.Location = new System.Drawing.Point(598, 102);
+            this.picBoxMovie3.Name = "picBoxMovie3";
+            this.picBoxMovie3.Size = new System.Drawing.Size(210, 131);
+            this.picBoxMovie3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxMovie3.TabIndex = 21;
+            this.picBoxMovie3.TabStop = false;
+            this.picBoxMovie3.MouseHover += new System.EventHandler(this.picBoxMenInBlack_MouseHover);
             // 
-            // picBoxHarryPotter
+            // picBoxMovie4
             // 
-            this.picBoxHarryPotter.Location = new System.Drawing.Point(47, 301);
-            this.picBoxHarryPotter.Name = "picBoxHarryPotter";
-            this.picBoxHarryPotter.Size = new System.Drawing.Size(210, 131);
-            this.picBoxHarryPotter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBoxHarryPotter.TabIndex = 22;
-            this.picBoxHarryPotter.TabStop = false;
-            this.picBoxHarryPotter.MouseHover += new System.EventHandler(this.picBoxHarryPotter_MouseHover);
+            this.picBoxMovie4.Location = new System.Drawing.Point(47, 301);
+            this.picBoxMovie4.Name = "picBoxMovie4";
+            this.picBoxMovie4.Size = new System.Drawing.Size(210, 131);
+            this.picBoxMovie4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxMovie4.TabIndex = 22;
+            this.picBoxMovie4.TabStop = false;
+            this.picBoxMovie4.MouseHover += new System.EventHandler(this.picBoxHarryPotter_MouseHover);
             // 
-            // picBoxAvatar
+            // picBoxMovie5
             // 
-            this.picBoxAvatar.Location = new System.Drawing.Point(324, 301);
-            this.picBoxAvatar.Name = "picBoxAvatar";
-            this.picBoxAvatar.Size = new System.Drawing.Size(210, 131);
-            this.picBoxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBoxAvatar.TabIndex = 23;
-            this.picBoxAvatar.TabStop = false;
-            this.picBoxAvatar.MouseHover += new System.EventHandler(this.picBoxAvatar_MouseHover);
+            this.picBoxMovie5.Location = new System.Drawing.Point(324, 301);
+            this.picBoxMovie5.Name = "picBoxMovie5";
+            this.picBoxMovie5.Size = new System.Drawing.Size(210, 131);
+            this.picBoxMovie5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxMovie5.TabIndex = 23;
+            this.picBoxMovie5.TabStop = false;
+            this.picBoxMovie5.MouseHover += new System.EventHandler(this.picBoxAvatar_MouseHover);
             // 
-            // picBoxAvengers
+            // picBoxMovie6
             // 
-            this.picBoxAvengers.Location = new System.Drawing.Point(598, 301);
-            this.picBoxAvengers.Name = "picBoxAvengers";
-            this.picBoxAvengers.Size = new System.Drawing.Size(210, 131);
-            this.picBoxAvengers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBoxAvengers.TabIndex = 24;
-            this.picBoxAvengers.TabStop = false;
-            this.picBoxAvengers.MouseHover += new System.EventHandler(this.picBoxAvengers_MouseHover);
+            this.picBoxMovie6.Location = new System.Drawing.Point(598, 301);
+            this.picBoxMovie6.Name = "picBoxMovie6";
+            this.picBoxMovie6.Size = new System.Drawing.Size(210, 131);
+            this.picBoxMovie6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxMovie6.TabIndex = 24;
+            this.picBoxMovie6.TabStop = false;
+            this.picBoxMovie6.MouseHover += new System.EventHandler(this.picBoxAvengers_MouseHover);
             // 
             // btnBuyMc
             // 
@@ -239,12 +232,12 @@
             this.Controls.Add(this.btnBuyMc);
             this.Controls.Add(this.btnBuyTerraria);
             this.Controls.Add(this.btnBuyLoL);
-            this.Controls.Add(this.picBoxAvengers);
-            this.Controls.Add(this.picBoxAvatar);
-            this.Controls.Add(this.picBoxHarryPotter);
-            this.Controls.Add(this.picBoxMenInBlack);
-            this.Controls.Add(this.picBoxXMEN);
-            this.Controls.Add(this.picBoxStarWars);
+            this.Controls.Add(this.picBoxMovie6);
+            this.Controls.Add(this.picBoxMovie5);
+            this.Controls.Add(this.picBoxMovie4);
+            this.Controls.Add(this.picBoxMovie3);
+            this.Controls.Add(this.picBoxMovie2);
+            this.Controls.Add(this.picBoxMovie1);
             this.Controls.Add(this.btnNextPage);
             this.Controls.Add(this.txtBoxWelcome);
             this.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -253,12 +246,13 @@
             this.Name = "FIlmShopView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Film Shop";
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxStarWars)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxXMEN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxMenInBlack)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxHarryPotter)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxAvatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxAvengers)).EndInit();
+            this.Load += new System.EventHandler(this.FIlmShopView_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -267,24 +261,18 @@
 
         private System.Windows.Forms.RichTextBox txtBoxWelcome;
         private System.Windows.Forms.Button btnNextPage;
-        private System.Windows.Forms.PictureBox picBoxStarWars;
-        private System.Windows.Forms.PictureBox picBoxXMEN;
-        private System.Windows.Forms.PictureBox picBoxMenInBlack;
-        private System.Windows.Forms.PictureBox picBoxHarryPotter;
-        private System.Windows.Forms.PictureBox picBoxAvatar;
-        private System.Windows.Forms.PictureBox picBoxAvengers;
+        private System.Windows.Forms.PictureBox picBoxMovie1;
+        private System.Windows.Forms.PictureBox picBoxMovie2;
+        private System.Windows.Forms.PictureBox picBoxMovie3;
+        private System.Windows.Forms.PictureBox picBoxMovie4;
+        private System.Windows.Forms.PictureBox picBoxMovie5;
+        private System.Windows.Forms.PictureBox picBoxMovie6;
         private System.Windows.Forms.Button btnBuyMc;
         private System.Windows.Forms.Button btnBuyTerraria;
         private System.Windows.Forms.Button btnBuyLoL;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.ToolTip toolTip2;
-        private System.Windows.Forms.ToolTip toolTip3;
-        private System.Windows.Forms.ToolTip toolTip4;
-        private System.Windows.Forms.ToolTip toolTip5;
-        private System.Windows.Forms.ToolTip toolTip6;
         private System.Windows.Forms.Button btnBack;
     }
 }
