@@ -1,4 +1,4 @@
-﻿using ChristmasProgram.View;
+﻿using BalskiProject.View;
 using System;
 using System.Windows.Forms;
 

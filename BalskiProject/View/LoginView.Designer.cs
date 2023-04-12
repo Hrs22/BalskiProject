@@ -1,4 +1,4 @@
-﻿namespace ChristmasProgram.View
+﻿namespace BalskiProject.View
 {
     partial class LoginView
     {

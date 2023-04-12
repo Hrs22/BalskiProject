@@ -2,7 +2,7 @@
 using BalskiProject.Utilities;
 using System.Linq;
 
-namespace ChristmasProgram.Controller
+namespace BalskiProject.Controller
 {
     public class LoginController
     {

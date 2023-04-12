@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 
-namespace ChristmasProgram.Controller
+namespace BalskiProject.Controller
 {
     public class CRUDController
     {
