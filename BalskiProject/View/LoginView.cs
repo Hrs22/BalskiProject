@@ -27,6 +27,24 @@ namespace ChristmasProgram.View
                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            else if (!Validator.EmailLenght(txtBoxEmail.Text))
+            {
+                MessageBox.Show("The lenght of the Email should be between 8 and 18", "INVALID EMAIL",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else if (!Validator.IsValidEmail(txtBoxEmail.Text))
+            {
+                MessageBox.Show("Your email is missing something!", "INVALID EMAIL",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else if (!Validator.PasswordLength(txtBoxPassword.Text))
+            {
+                MessageBox.Show("The lenght of the Password should be between 4 and 12", "INVALID PASSWORD",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             var adminPassword = LoginController.IsUserAdmin(txtBoxEmail.Text, txtBoxPassword.Text);
             var message = LoginController.IsUserLogged(txtBoxEmail.Text, txtBoxPassword.Text);
             if (adminPassword)
