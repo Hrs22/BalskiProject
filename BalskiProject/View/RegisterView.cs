@@ -1,10 +1,10 @@
-﻿using BalskiProject.Utilities;
-using ChristmasProgram.Controller;
+﻿using BalskiProject.Controller;
+using BalskiProject.Utilities;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace ChristmasProgram.View
+namespace BalskiProject.View
 {
     public partial class RegisterView : Form
     {
@@ -17,8 +17,8 @@ namespace ChristmasProgram.View
         {
             toolTipLearnThis.Show("The following information helps us verify your identity and provide you with appropriate content.", txtBoxHoverText);
             toolTipLearnThis.OwnerDraw = true;
-            toolTipLearnThis.ForeColor = Color.Black;
-            toolTipLearnThis.BackColor = Color.Purple;
+            toolTipLearnThis.ForeColor = Color.White;
+            toolTipLearnThis.BackColor = Color.Black;
         }
         private void toolTip1_Draw(object sender, DrawToolTipEventArgs e)
         {
@@ -64,7 +64,7 @@ namespace ChristmasProgram.View
                 }
                 MessageBox.Show("Succsesfully registered!", "Welcome",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ChristmasProgram.MainView mv = new ChristmasProgram.MainView();
+                LoginView mv = new LoginView();
                 this.Hide();
                 mv.ShowDialog();
                 this.Close();

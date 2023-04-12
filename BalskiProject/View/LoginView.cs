@@ -1,10 +1,9 @@
-﻿using BalskiProject.Utilities;
-using BalskiProject.View;
-using ChristmasProgram.Controller;
+﻿using BalskiProject.Controller;
+using BalskiProject.Utilities;
 using System;
 using System.Windows.Forms;
 
-namespace ChristmasProgram.View
+namespace BalskiProject.View
 {
     public partial class LoginView : Form
     {

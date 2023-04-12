@@ -133,9 +133,9 @@
             this.txtBoxInfo.Location = new System.Drawing.Point(90, 106);
             this.txtBoxInfo.Name = "txtBoxInfo";
             this.txtBoxInfo.ReadOnly = true;
-            this.txtBoxInfo.Size = new System.Drawing.Size(446, 38);
+            this.txtBoxInfo.Size = new System.Drawing.Size(427, 38);
             this.txtBoxInfo.TabIndex = 12;
-            this.txtBoxInfo.Text = "Here you can remove/add users in the project\n";
+            this.txtBoxInfo.Text = "Here you can remove/add users in the project";
             // 
             // AdminMainView
             // 

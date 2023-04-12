@@ -1,5 +1,5 @@
-﻿using BalskiProject.Utilities;
-using ChristmasProgram.Controller;
+﻿using BalskiProject.Controller;
+using BalskiProject.Utilities;
 using System;
 using System.Windows.Forms;
 
