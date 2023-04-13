@@ -21,4 +21,8 @@
 - **ConnectionString |DataDirectory|**
 
 ## Technologies💻
-- **.NET Framework**
+- **.NET Framework Version=v4.8**
+- **IMDb API**
+- **TMDbLib API**
+- **Newtonsoft.Json**
+- **Entity Framework**
