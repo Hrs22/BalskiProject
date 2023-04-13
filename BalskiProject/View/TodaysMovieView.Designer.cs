@@ -44,12 +44,24 @@
             this.picBoxMovie3 = new System.Windows.Forms.PictureBox();
             this.picBoxMovie2 = new System.Windows.Forms.PictureBox();
             this.picBoxMovie1 = new System.Windows.Forms.PictureBox();
+            this.picBoxHearth1 = new System.Windows.Forms.PictureBox();
+            this.picBoxHearth2 = new System.Windows.Forms.PictureBox();
+            this.picBoxHearth3 = new System.Windows.Forms.PictureBox();
+            this.picBoxHearth4 = new System.Windows.Forms.PictureBox();
+            this.picBoxHearth5 = new System.Windows.Forms.PictureBox();
+            this.picBoxHearth6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxHearth1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxHearth2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxHearth3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxHearth4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxHearth5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxHearth6)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBoxWelcome
@@ -63,7 +75,7 @@
             this.txtBoxWelcome.ReadOnly = true;
             this.txtBoxWelcome.Size = new System.Drawing.Size(360, 82);
             this.txtBoxWelcome.TabIndex = 3;
-            this.txtBoxWelcome.Text = "   Welcome to Balski \nTodays Trending Movies";
+            this.txtBoxWelcome.Text = "   Welcome to Balski\nTodays Trending Movies";
             // 
             // btnNextPage
             // 
@@ -221,6 +233,78 @@
             this.picBoxMovie1.TabStop = false;
             this.picBoxMovie1.MouseHover += new System.EventHandler(this.picBox1_MouseHover);
             // 
+            // picBoxHearth1
+            // 
+            this.picBoxHearth1.BackColor = System.Drawing.Color.Transparent;
+            this.picBoxHearth1.Image = global::BalskiProject.Properties.Resources.hearth;
+            this.picBoxHearth1.Location = new System.Drawing.Point(199, 249);
+            this.picBoxHearth1.Name = "picBoxHearth1";
+            this.picBoxHearth1.Size = new System.Drawing.Size(56, 45);
+            this.picBoxHearth1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxHearth1.TabIndex = 32;
+            this.picBoxHearth1.TabStop = false;
+            this.picBoxHearth1.Click += new System.EventHandler(this.picBoxHearth1_Click);
+            // 
+            // picBoxHearth2
+            // 
+            this.picBoxHearth2.BackColor = System.Drawing.Color.Transparent;
+            this.picBoxHearth2.Image = global::BalskiProject.Properties.Resources.hearth;
+            this.picBoxHearth2.Location = new System.Drawing.Point(476, 249);
+            this.picBoxHearth2.Name = "picBoxHearth2";
+            this.picBoxHearth2.Size = new System.Drawing.Size(56, 45);
+            this.picBoxHearth2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxHearth2.TabIndex = 33;
+            this.picBoxHearth2.TabStop = false;
+            this.picBoxHearth2.Click += new System.EventHandler(this.picBoxHearth2_Click);
+            // 
+            // picBoxHearth3
+            // 
+            this.picBoxHearth3.BackColor = System.Drawing.Color.Transparent;
+            this.picBoxHearth3.Image = global::BalskiProject.Properties.Resources.hearth;
+            this.picBoxHearth3.Location = new System.Drawing.Point(750, 249);
+            this.picBoxHearth3.Name = "picBoxHearth3";
+            this.picBoxHearth3.Size = new System.Drawing.Size(56, 45);
+            this.picBoxHearth3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxHearth3.TabIndex = 34;
+            this.picBoxHearth3.TabStop = false;
+            this.picBoxHearth3.Click += new System.EventHandler(this.picBoxHearth3_Click);
+            // 
+            // picBoxHearth4
+            // 
+            this.picBoxHearth4.BackColor = System.Drawing.Color.Transparent;
+            this.picBoxHearth4.Image = global::BalskiProject.Properties.Resources.hearth;
+            this.picBoxHearth4.Location = new System.Drawing.Point(199, 447);
+            this.picBoxHearth4.Name = "picBoxHearth4";
+            this.picBoxHearth4.Size = new System.Drawing.Size(56, 45);
+            this.picBoxHearth4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxHearth4.TabIndex = 35;
+            this.picBoxHearth4.TabStop = false;
+            this.picBoxHearth4.Click += new System.EventHandler(this.picBoxHearth4_Click);
+            // 
+            // picBoxHearth5
+            // 
+            this.picBoxHearth5.BackColor = System.Drawing.Color.Transparent;
+            this.picBoxHearth5.Image = global::BalskiProject.Properties.Resources.hearth;
+            this.picBoxHearth5.Location = new System.Drawing.Point(476, 447);
+            this.picBoxHearth5.Name = "picBoxHearth5";
+            this.picBoxHearth5.Size = new System.Drawing.Size(56, 45);
+            this.picBoxHearth5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxHearth5.TabIndex = 36;
+            this.picBoxHearth5.TabStop = false;
+            this.picBoxHearth5.Click += new System.EventHandler(this.picBoxHearth5_Click);
+            // 
+            // picBoxHearth6
+            // 
+            this.picBoxHearth6.BackColor = System.Drawing.Color.Transparent;
+            this.picBoxHearth6.Image = global::BalskiProject.Properties.Resources.hearth;
+            this.picBoxHearth6.Location = new System.Drawing.Point(750, 447);
+            this.picBoxHearth6.Name = "picBoxHearth6";
+            this.picBoxHearth6.Size = new System.Drawing.Size(56, 45);
+            this.picBoxHearth6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxHearth6.TabIndex = 37;
+            this.picBoxHearth6.TabStop = false;
+            this.picBoxHearth6.Click += new System.EventHandler(this.picBoxHearth6_Click);
+            // 
             // TodaysMovieView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -228,6 +312,12 @@
             this.BackColor = System.Drawing.Color.Indigo;
             this.BackgroundImage = global::BalskiProject.Properties.Resources.Balski12;
             this.ClientSize = new System.Drawing.Size(832, 548);
+            this.Controls.Add(this.picBoxHearth6);
+            this.Controls.Add(this.picBoxHearth5);
+            this.Controls.Add(this.picBoxHearth4);
+            this.Controls.Add(this.picBoxHearth3);
+            this.Controls.Add(this.picBoxHearth2);
+            this.Controls.Add(this.picBoxHearth1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnVisit6);
             this.Controls.Add(this.btnVisit5);
@@ -256,6 +346,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMovie1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxHearth1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxHearth2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxHearth3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxHearth4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxHearth5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxHearth6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -277,5 +373,11 @@
         private System.Windows.Forms.Button btnVisit5;
         private System.Windows.Forms.Button btnVisit4;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.PictureBox picBoxHearth1;
+        private System.Windows.Forms.PictureBox picBoxHearth2;
+        private System.Windows.Forms.PictureBox picBoxHearth3;
+        private System.Windows.Forms.PictureBox picBoxHearth4;
+        private System.Windows.Forms.PictureBox picBoxHearth5;
+        private System.Windows.Forms.PictureBox picBoxHearth6;
     }
 }

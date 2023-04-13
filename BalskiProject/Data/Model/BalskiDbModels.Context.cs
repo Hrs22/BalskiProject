@@ -26,5 +26,6 @@ namespace BalskiProject.Data.Model
         }
     
         public virtual DbSet<AccTable> AccTables { get; set; }
+        public virtual DbSet<FavsTable> FavsTables { get; set; }
     }
 }

@@ -31,7 +31,7 @@ namespace BalskiProject
 
         private void btnGoTvWeekly_Click(object sender, EventArgs e)
         {
-            TodaysTvShowsView sv = new TodaysTvShowsView();
+            WeeklyTvShowsView sv = new WeeklyTvShowsView();
             sv.Show();
             this.Hide();
         }
@@ -46,6 +46,14 @@ namespace BalskiProject
         private void btnGoWeeklyMovies_Click(object sender, EventArgs e)
         {
             WeeklyMovieView fv = new WeeklyMovieView();
+            fv.Show();
+            this.Hide();
+            this.Close();
+        }
+
+        private void picBoxHearth_Click(object sender, EventArgs e)
+        {
+            FavouritesView fv = new FavouritesView();
             fv.Show();
             this.Hide();
             this.Close();

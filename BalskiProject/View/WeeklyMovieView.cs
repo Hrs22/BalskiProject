@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BalskiProject.Controller;
+using BalskiProject.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -14,6 +16,7 @@ namespace BalskiProject.View
     public partial class WeeklyMovieView : Form
     {
         private static List<SearchMovie> trendingMovies;
+        private static FavsController controller = new FavsController();
         public WeeklyMovieView()
         {
             InitializeComponent();
@@ -21,7 +24,7 @@ namespace BalskiProject.View
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            TodaysMovieView mv = new TodaysMovieView();
+            MainView mv = new MainView();
             mv.Show();
             this.Hide();
             this.Close();
@@ -144,6 +147,48 @@ namespace BalskiProject.View
             t_Tip.IsBalloon = true;
             t_Tip.ToolTipIcon = ToolTipIcon.None;
             t_Tip.SetToolTip(picBoxMovie6, trendingMovies[5].Overview);
+        }
+
+        private void picBoxHearth1_Click(object sender, EventArgs e)
+        {
+            controller.AddFav(trendingMovies[0].Title, LoggedUserData.Id);
+            MessageBox.Show("Sucsessfully added to favourites", "FAVOURITES UPDATE",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void picBoxHearth2_Click(object sender, EventArgs e)
+        {
+            controller.AddFav(trendingMovies[1].Title, LoggedUserData.Id);
+            MessageBox.Show("Sucsessfully added to favourites", "FAVOURITES UPDATE",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void picBoxHearth3_Click(object sender, EventArgs e)
+        {
+            controller.AddFav(trendingMovies[2].Title, LoggedUserData.Id);
+            MessageBox.Show("Sucsessfully added to favourites", "FAVOURITES UPDATE",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void picBoxHearth4_Click(object sender, EventArgs e)
+        {
+            controller.AddFav(trendingMovies[3].Title, LoggedUserData.Id);
+            MessageBox.Show("Sucsessfully added to favourites", "FAVOURITES UPDATE",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void picBoxHearth5_Click(object sender, EventArgs e)
+        {
+            controller.AddFav(trendingMovies[4].Title, LoggedUserData.Id);
+            MessageBox.Show("Sucsessfully added to favourites", "FAVOURITES UPDATE",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void picBoxHearth6_Click(object sender, EventArgs e)
+        {
+            controller.AddFav(trendingMovies[5].Title, LoggedUserData.Id);
+            MessageBox.Show("Sucsessfully added to favourites", "FAVOURITES UPDATE",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

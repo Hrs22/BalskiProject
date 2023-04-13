@@ -6,6 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="5f2e1fe77ee1459ea750a5a1c3be34a8" Name="Diagram1">
         <EntityTypeShape EntityType="BalskiDbContexModel.AccTable" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BalskiDbContexModel.FavsTable" Width="1.5" PointX="3.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

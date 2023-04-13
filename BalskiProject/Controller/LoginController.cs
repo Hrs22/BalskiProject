@@ -27,6 +27,7 @@ namespace BalskiProject.Controller
                 }
                 LoggedUserData.Email = foundUser.Email;
                 LoggedUserData.Password = foundUser.Password;
+                LoggedUserData.Id = foundUser.Id;
                 return "Successfuly logged!";
             }
         }

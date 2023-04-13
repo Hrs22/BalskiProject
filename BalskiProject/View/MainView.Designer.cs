@@ -40,6 +40,7 @@
             this.picBoxHearth = new System.Windows.Forms.PictureBox();
             this.btnGoWeeklyMovies = new System.Windows.Forms.Button();
             this.btnGoTvDaily = new System.Windows.Forms.Button();
+            this.lblFavs = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxHearth)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,6 +115,7 @@
             this.picBoxHearth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxHearth.TabIndex = 10;
             this.picBoxHearth.TabStop = false;
+            this.picBoxHearth.Click += new System.EventHandler(this.picBoxHearth_Click);
             // 
             // btnGoWeeklyMovies
             // 
@@ -139,6 +141,18 @@
             this.btnGoTvDaily.UseVisualStyleBackColor = false;
             this.btnGoTvDaily.Click += new System.EventHandler(this.btnGoTvDaily_Click);
             // 
+            // lblFavs
+            // 
+            this.lblFavs.AutoSize = true;
+            this.lblFavs.BackColor = System.Drawing.Color.Transparent;
+            this.lblFavs.Font = new System.Drawing.Font("MV Boli", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFavs.ForeColor = System.Drawing.SystemColors.Info;
+            this.lblFavs.Location = new System.Drawing.Point(274, 282);
+            this.lblFavs.Name = "lblFavs";
+            this.lblFavs.Size = new System.Drawing.Size(37, 20);
+            this.lblFavs.TabIndex = 13;
+            this.lblFavs.Text = "Favs";
+            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,6 +161,7 @@
             this.BackColor = System.Drawing.Color.Indigo;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(573, 430);
+            this.Controls.Add(this.lblFavs);
             this.Controls.Add(this.btnGoTvDaily);
             this.Controls.Add(this.btnGoWeeklyMovies);
             this.Controls.Add(this.picBoxHearth);
@@ -161,6 +176,7 @@
             this.Text = "Balski";
             ((System.ComponentModel.ISupportInitialize)(this.picBoxHearth)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -176,6 +192,7 @@
         private System.Windows.Forms.PictureBox picBoxHearth;
         private System.Windows.Forms.Button btnGoWeeklyMovies;
         private System.Windows.Forms.Button btnGoTvDaily;
+        private System.Windows.Forms.Label lblFavs;
     }
 }
 

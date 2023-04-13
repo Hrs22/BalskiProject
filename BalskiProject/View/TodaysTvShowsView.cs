@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BalskiProject.Controller;
+using BalskiProject.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -14,6 +16,7 @@ namespace BalskiProject.View
     public partial class TodaysTvShowsView : Form
     {
         private static List<SearchTv> trendingTvSeries;
+        private static FavsController controller = new FavsController();
         public TodaysTvShowsView()
         {
             InitializeComponent();
@@ -142,6 +145,56 @@ namespace BalskiProject.View
         private void btnVisit6_Click(object sender, EventArgs e)
         {
             Process.Start($"https://www.google.com/search?q={trendingTvSeries[5].Name}");
+        }
+
+        private void btnNextPage_Click(object sender, EventArgs e)
+        {
+            WeeklyTvShowsView vm = new WeeklyTvShowsView();
+            vm.Show();
+            this.Hide();
+            this.Close();
+        }
+
+        private void picBoxHearth1_Click(object sender, EventArgs e)
+        {
+            controller.AddFav(trendingTvSeries[0].Name, LoggedUserData.Id);
+            MessageBox.Show("Sucsessfully added to favourites", "FAVOURITES UPDATE",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void picBoxHearth2_Click(object sender, EventArgs e)
+        {
+            controller.AddFav(trendingTvSeries[1].Name, LoggedUserData.Id);
+            MessageBox.Show("Sucsessfully added to favourites", "FAVOURITES UPDATE",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void picBoxHearth3_Click(object sender, EventArgs e)
+        {
+            controller.AddFav(trendingTvSeries[2].Name, LoggedUserData.Id);
+            MessageBox.Show("Sucsessfully added to favourites", "FAVOURITES UPDATE",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void picBoxHearth4_Click(object sender, EventArgs e)
+        {
+            controller.AddFav(trendingTvSeries[3].Name, LoggedUserData.Id);
+            MessageBox.Show("Sucsessfully added to favourites", "FAVOURITES UPDATE",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void picBoxHearth5_Click(object sender, EventArgs e)
+        {
+            controller.AddFav(trendingTvSeries[4].Name, LoggedUserData.Id);
+            MessageBox.Show("Sucsessfully added to favourites", "FAVOURITES UPDATE",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void picBoxHearth6_Click(object sender, EventArgs e)
+        {
+            controller.AddFav(trendingTvSeries[5].Name, LoggedUserData.Id);
+            MessageBox.Show("Sucsessfully added to favourites", "FAVOURITES UPDATE",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

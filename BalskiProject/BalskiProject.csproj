@@ -165,6 +165,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\CRUDController.cs" />
+    <Compile Include="Controller\FavsController.cs" />
     <Compile Include="Controller\LoginController.cs" />
     <Compile Include="Data\Model\AccTable.cs">
       <DependentUpon>BalskiDbModels.tt</DependentUpon>
@@ -184,6 +185,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BalskiDbModels.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Data\Model\FavsTable.cs">
+      <DependentUpon>BalskiDbModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\LoggedUserData.cs" />
@@ -193,6 +197,12 @@
     </Compile>
     <Compile Include="View\AdminMainView.Designer.cs">
       <DependentUpon>AdminMainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FavouritesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FavouritesView.Designer.cs">
+      <DependentUpon>FavouritesView.cs</DependentUpon>
     </Compile>
     <Compile Include="View\TodaysMovieView.cs">
       <SubType>Form</SubType>
@@ -230,6 +240,12 @@
     <Compile Include="View\WeeklyMovieView.Designer.cs">
       <DependentUpon>WeeklyMovieView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\WeeklyTvShowsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WeeklyTvShowsView.Designer.cs">
+      <DependentUpon>WeeklyTvShowsView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -242,6 +258,9 @@
     </Compile>
     <EmbeddedResource Include="View\AdminMainView.resx">
       <DependentUpon>AdminMainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FavouritesView.resx">
+      <DependentUpon>FavouritesView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TodaysMovieView.resx">
       <DependentUpon>TodaysMovieView.cs</DependentUpon>
@@ -260,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\WeeklyMovieView.resx">
       <DependentUpon>WeeklyMovieView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WeeklyTvShowsView.resx">
+      <DependentUpon>WeeklyTvShowsView.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Data\Model\BalskiDbModels.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

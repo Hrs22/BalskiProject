@@ -51,7 +51,7 @@
             this.dgv.AutoGenerateColumns = false;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.DataSource = this.accTableBindingSource;
-            this.dgv.Location = new System.Drawing.Point(122, 170);
+            this.dgv.Location = new System.Drawing.Point(141, 169);
             this.dgv.Name = "dgv";
             this.dgv.Size = new System.Drawing.Size(344, 124);
             this.dgv.TabIndex = 11;
