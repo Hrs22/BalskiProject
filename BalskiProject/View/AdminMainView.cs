@@ -90,15 +90,12 @@ namespace BalskiProject.View
             else
             {
                 CrudController.Register(txtBoxEmail.Text, txtBoxPassword.Text);
-                Clear();
 
-                void Clear()
-                {
-                    txtBoxEmail = null;
-                    txtBoxPassword = null;
-                }
-                MessageBox.Show("Succsesfully added user!");
+                txtBoxEmail.Text = "";
+                txtBoxPassword.Text = "";
 
+                MessageBox.Show("Successfully added user!");
+                LoadAccount();
             }
         }
         private void btnRemoveUser_Click(object sender, EventArgs e)
@@ -128,8 +125,20 @@ namespace BalskiProject.View
             }
             else
             {
-                CrudController.DeleteUser(txtBoxEmail.Text, txtBoxPassword.Text);
-                LoadAccount();
+                bool isDeleted = CrudController.DeleteUser(txtBoxEmail.Text, txtBoxPassword.Text);
+                if (isDeleted)
+                {
+                    MessageBox.Show("User successfully deleted!", "SUCCESSFULLY DELETED",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadAccount();
+                }
+                else
+                {
+                    MessageBox.Show("User not found!", "INVALID DATA",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                txtBoxEmail.Text = "";
+                txtBoxPassword.Text = "";
             }
         }
     }

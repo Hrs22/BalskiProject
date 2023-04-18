@@ -72,7 +72,11 @@ namespace BalskiProject.View
         }
         private void btnCantLog_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Никой не ми плаща да помагам.");
+            MessageBox.Show("1. Enter your email address. \n[Must include 8-18 characters and the '@' symbol]\n\n" +
+                "2. Enter your password. \n[Must include 4-12 characters]\n\n" +
+                "3. Click the “Log in” button. ", "INFORMATION",
+            MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
 
         private void txtBoxEmail_MouseHover(object sender, EventArgs e)
@@ -89,7 +93,7 @@ namespace BalskiProject.View
 
         private void btnAreYouAdmin_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Just enter the admin email and password.");
+            MessageBox.Show("Enter the admin email and password.");
         }
 
         private void OnFocus(object sender, EventArgs e)

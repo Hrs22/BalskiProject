@@ -31,16 +31,21 @@ namespace BalskiProject.Controller
             }
         }
 
-        public void DeleteUser(string txtBoxEnterEmail, string txtBoxEnterPassword)
+        public bool DeleteUser(string txtBoxEnterEmail, string txtBoxEnterPassword)
         {
             using (BalskiDbContexEntities BalskiContext = new BalskiDbContexEntities())
             {
                 var userToDelete = BalskiContext.AccTables
                 .Where(u => u.Email == txtBoxEnterEmail && u.Password == txtBoxEnterPassword)
-                .First();
+                .FirstOrDefault();
 
-                BalskiContext.AccTables.Remove(userToDelete);
-                BalskiContext.SaveChanges();
+                if (userToDelete != null)
+                {
+                    BalskiContext.AccTables.Remove(userToDelete);
+                    BalskiContext.SaveChanges();
+                    return true;
+                }
+                return false;
             }
         }
         public List<AccTable> AllAccounts()

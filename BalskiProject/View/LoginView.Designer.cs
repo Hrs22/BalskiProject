@@ -81,11 +81,11 @@
             // 
             this.btnCantLog.BackColor = System.Drawing.SystemColors.Info;
             this.btnCantLog.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCantLog.Location = new System.Drawing.Point(100, 482);
+            this.btnCantLog.Location = new System.Drawing.Point(87, 482);
             this.btnCantLog.Name = "btnCantLog";
-            this.btnCantLog.Size = new System.Drawing.Size(148, 36);
+            this.btnCantLog.Size = new System.Drawing.Size(168, 36);
             this.btnCantLog.TabIndex = 4;
-            this.btnCantLog.Text = "Can\'t log in?";
+            this.btnCantLog.Text = "Trouble signing in?";
             this.btnCantLog.UseVisualStyleBackColor = false;
             this.btnCantLog.Click += new System.EventHandler(this.btnCantLog_Click);
             // 
