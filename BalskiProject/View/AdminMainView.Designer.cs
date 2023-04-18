@@ -42,15 +42,28 @@
             this.toolTipPassword = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipUserAdd = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipUserRemove = new System.Windows.Forms.ToolTip(this.components);
+            this.balskiDbContexDataSet = new BalskiProject.BalskiDbContexDataSet();
+            this.accTableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.accTableTableAdapter = new BalskiProject.BalskiDbContexDataSetTableAdapters.AccTableTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.balskiDbContexDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accTableBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv
             // 
+            this.dgv.AllowUserToAddRows = false;
             this.dgv.AutoGenerateColumns = false;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv.DataSource = this.accTableBindingSource;
+            this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.passwordDataGridViewTextBoxColumn});
+            this.dgv.DataSource = this.accTableBindingSource1;
             this.dgv.Location = new System.Drawing.Point(141, 169);
             this.dgv.Name = "dgv";
             this.dgv.Size = new System.Drawing.Size(344, 124);
@@ -137,6 +150,41 @@
             this.txtBoxInfo.TabIndex = 12;
             this.txtBoxInfo.Text = "Here you can remove/add users in the project";
             // 
+            // balskiDbContexDataSet
+            // 
+            this.balskiDbContexDataSet.DataSetName = "BalskiDbContexDataSet";
+            this.balskiDbContexDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // accTableBindingSource1
+            // 
+            this.accTableBindingSource1.DataMember = "AccTable";
+            this.accTableBindingSource1.DataSource = this.balskiDbContexDataSet;
+            // 
+            // accTableTableAdapter
+            // 
+            this.accTableTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // passwordDataGridViewTextBoxColumn
+            // 
+            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
+            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
+            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
+            this.passwordDataGridViewTextBoxColumn.Width = 150;
+            // 
             // AdminMainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,6 +206,8 @@
             this.Load += new System.EventHandler(this.AdminMainView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.balskiDbContexDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accTableBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -176,5 +226,11 @@
         private System.Windows.Forms.ToolTip toolTipPassword;
         private System.Windows.Forms.ToolTip toolTipUserAdd;
         private System.Windows.Forms.ToolTip toolTipUserRemove;
+        private BalskiDbContexDataSet balskiDbContexDataSet;
+        private System.Windows.Forms.BindingSource accTableBindingSource1;
+        private BalskiDbContexDataSetTableAdapters.AccTableTableAdapter accTableTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
     }
 }

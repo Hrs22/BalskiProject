@@ -164,6 +164,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BalskiDbContexDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BalskiDbContexDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Controller\CRUDController.cs" />
     <Compile Include="Controller\FavsController.cs" />
     <Compile Include="Controller\LoginController.cs" />
@@ -287,6 +292,17 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BalskiDbModels.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="BalskiDbContexDataSet.xsc">
+      <DependentUpon>BalskiDbContexDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BalskiDbContexDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BalskiDbContexDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BalskiDbContexDataSet.xss">
+      <DependentUpon>BalskiDbContexDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Data\Model\BalskiDbModels.edmx.diagram">
       <DependentUpon>BalskiDbModels.edmx</DependentUpon>
     </None>
