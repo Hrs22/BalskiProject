@@ -8,7 +8,7 @@
 
 - **[Technologies](#technologies)**
 
-## About📝
+## About 📝
 
 **BalskiProject is a windows desktop applications, where you can see the daily and weekly tv shows and movies.**
 
@@ -20,9 +20,12 @@
 
 - **ConnectionString |DataDirectory|**
 
-## Technologies💻
+## Technologies 💻
 - **.NET Framework Version=v4.8**
 - **IMDb API**
 - **TMDbLib API**
 - **Newtonsoft.Json**
 - **Entity Framework**
+
+## License 📃
+**BalskiProject is available under the <a href="https://en.wikipedia.org/wiki/MIT_License">MIT</a> license.**
